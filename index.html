@@ -33,7 +33,7 @@
             <div class="col-md-12">
               <h2>
                 <a class="text-light">
-                  EMOTION-ALIGNED GENERATION IN DIFFUSION TEXT TO SPEECH MODELS VIA PREFERENCE-GUIDED OPTIMIZATION
+                  Emo-BPO: Emotion Bidirectional Preference Optimization for Diffusion-based Emotional TTS
                 </a>
               </h2>
                 <div class="row">
@@ -56,12 +56,8 @@
             <p><strong>cosyvoice2</strong>  : Baseline cosyvoice2 model.</a></p>
             <p><strong>Our Emo-BPO</strong>  : Our proposed Emo-BPO model.</a></p>
             <figure>
-              <img src="icassp.png" alt="Trulli" style="width:100%">
-              <figcaption>Unlike prior DPO-based methods, Emo-BPO avoids direct propagation of preferences across diffusion steps. At each step
-                Arcface Loss
-                in Emo-BPO, a set of candidate samples is produced, from which a suitable win–lose pair is chosen to update the diffusion model.
-                Afterward, one sample is randomly picked CLEP
-                to serve as the starting point for the next iteration.</figcaption>
+              <img src="icassp.png" alt="Trulli" style="width:80%">
+              <figcaption>We propose Emotion Bidirectional Preference Optimization (Emo-BPO), a structured framework for diffusion-based emotional TTS. Emo-BPO constructs reordered same-text emotional pairs to jointly learn emotion-aligned and emotion-contrastive score functions. During inference, these branches are integrated through a contrastive guidance formulation compatible with CFG, strengthening target emotional trajectories while suppressing competing modes. Emo-BPO requires no additional annotations, reward models, or new training strategies and can be seamlessly integrated into existing diffusion-based TTS systems.</figcaption>
             </figure>
             <hr>
             <hr>
